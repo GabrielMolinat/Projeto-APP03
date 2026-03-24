@@ -7,7 +7,7 @@
 <body>
 
   <h1>Arise</h1>
-  <h4 id="subtitulo">Frases para te motivar todo dia!</h4>
+  <h4>Frases para te motivar no dia a dia!</h4>
 
   <div id="caixa-frase">
     <p  id="frase"></p>
@@ -15,9 +15,9 @@
     <p  id="anime"></p>
   </div>
 
-  <button onclick="proximaFrase()">Próxima Frase</button>
+<button onclick="proximaFrase()">Próxima Frase</button>
 
-  <script>
+<script>
     let frases = [
       {
         texto: "Não importa o quão devagar você vá, desde que não pare.",
@@ -90,8 +90,8 @@
         anime: "Dragon Ball Z"
       },
       {
-        texto: "Só há uma coisa necessária: tudo.",
-        autor: "Lelouch vi Britannia",
+        texto: "Só há uma coisa necessária, tudo.",
+        autor: "Lelouch Britannia",
         anime: "Code Geass"
       },
       {
@@ -106,7 +106,7 @@
       },
       {
         texto: "A vida não é um jogo de sorte. É de escolhas.",
-        autor: "Lelouch vi Britannia",
+        autor: "Lelouch Britannia",
         anime: "Code Geass"
       },
       {
@@ -122,7 +122,6 @@
     ];
 
     let indice = 0;
-
     function mostrarFrase() {
       document.getElementById("frase").textContent = '"' + frases[indice].texto + '"';
       document.getElementById("autor").textContent = "— " + frases[indice].autor;
@@ -138,7 +137,6 @@
     }
 
     mostrarFrase();
-  </script>
-
+</script>
 </body>
 </html>
